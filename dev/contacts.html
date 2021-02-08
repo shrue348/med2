@@ -1,0 +1,76 @@
+//= _header.html
+
+<div class="h1_wrap h1_wrap-contacts">
+	<div class="wrapper">
+		<h1>Контакты</h1>
+	</div>
+</div>
+
+<div id="contacts_map" class="contacts_map"></div>
+
+<div class="green_info">
+	<div class="wrapper">
+    <div class="row flex-row">
+      <div class="green_info_location col-">
+        <span>г. Санкт-Петербург,<br>Средний проспект В.О., д. 17</span>
+      </div>
+      <div class="green_info_phone col-">
+        <span>+7 (812) 323-15-03</span>
+      </div>
+      <div class="green_info_email col-">
+        <a href="mailto:da-med@list.ru">da-med@list.ru</a>
+      </div>
+      <div class="green_info_info col-">
+				<div>
+					<div class="footer_info__worktime">ПН-СБ 9:00 - 21:00</div>
+					<div class="footer_info__worktime">ВС 10:00 - 18:00</div>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contacts_content">
+	<div class="wrapper">
+		<div class="txt">
+			<h2>Реквизиты медицинского центра</h2>
+			<p>Юридический и почтовый адрес:<br>
+				199053, г. Санкт-Петербург, В.О. Средний пр., д. 17, лит. А. пом. 3 –Н</p>
+			<p>тел. 323-15-03, тел./факс 328-60-03</p>
+			<p>Общество с ограниченной ответственностью<br>
+				«Медицинский центр ДА!» / ООО «МЦ ДА!»</p>
+			<p>ИНН 7801379672 / КПП 780101001</p>	
+			<p>ОГРН 1057810263092</p>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+function init() {
+  var myMap = new ymaps.Map("contacts_map", {
+		center: [59.944446, 30.282646],
+		zoom: 16,
+		controls: []
+	}, {
+		searchControlProvider: 'yandex#search'
+	}),
+
+	myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+		hintContent: 'York'
+	}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'img/map_icon.png',
+		iconImageSize: [49, 69],
+		iconImageOffset: [-24, -69]
+	});
+
+  myMap.geoObjects.add(myPlacemark);
+}
+
+ymaps.ready(init);
+</script>
+
+//= _footer.html
