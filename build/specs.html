@@ -50,14 +50,35 @@
 	</div>
 </div>
 
-<div class="h1_wrap h1_wrap-news">
+<div class="h1_wrap h1_wrap-spec">
 	<div class="wrapper">
-		<h1>Новости</h1>
+		<h1>Специалисты</h1>
 	</div>
 </div>
 
-<div class="news_content">
+<div class="spec_content">
   <div class="wrapper">
+    <form class="spec_filter form">
+      Отделение
+
+      <div class="form-group col- mgb0">
+        <select name="" class="select" placeholder="Тема вопроса">
+          <!-- <option disabled>Тема вопроса</option> -->
+          <option value="Неврология">Неврология</option>
+          <option value="Вертебрология">Вертебрология</option>
+          <option value="Ортопедия">Ортопедия</option>
+          <option value="Физиотерапия">Физиотерапия</option>
+          <option value="Грязелечение">Грязелечение</option>
+          <option value="Мануальная терапия">Мануальная терапия</option>
+          <option value="Остеопатия">Остеопатия</option>
+          <option value="Массаж">Массаж</option>
+          <option value="Кинезотейпирование">Кинезотейпирование</option>
+        </select>
+      </div>
+
+      <button class="btn btn_green">Показать</button>
+    </form>
+
     <div class="news_list">
       <div class="row flex-row">
         <div class="col-6">
@@ -71,7 +92,7 @@
                 <p>"Медицинский центр ДА!» приглашает детей и взрослых на индивидуальные оздоровительные тренировки. У нас Вы сможете восстановить осанку,...</p>
               </div>
               <div class="news_list_item__date">28.10.2020</div>
-              <a href="news_item.html" class="news_list_item__link"></a>
+              <a href="specialist.html" class="news_list_item__link"></a>
             </div>
           </div>
         </div>
@@ -86,7 +107,7 @@
                 <p>"Медицинский центр ДА!» приглашает детей и взрослых на индивидуальные оздоровительные тренировки. У нас Вы сможете восстановить осанку,...</p>
               </div>
               <div class="news_list_item__date">28.10.2020</div>
-              <a href="news_item.html" class="news_list_item__link"></a>
+              <a href="specialist.html" class="news_list_item__link"></a>
             </div>
           </div>
         </div>
@@ -101,7 +122,7 @@
                 <p>"Медицинский центр ДА!» приглашает детей и взрослых на индивидуальные оздоровительные тренировки. У нас Вы сможете восстановить осанку,...</p>
               </div>
               <div class="news_list_item__date">28.10.2020</div>
-              <a href="news_item.html" class="news_list_item__link"></a>
+              <a href="specialist.html" class="news_list_item__link"></a>
             </div>
           </div>
         </div>
@@ -116,7 +137,7 @@
                 <p>"Медицинский центр ДА!» приглашает детей и взрослых на индивидуальные оздоровительные тренировки. У нас Вы сможете восстановить осанку,...</p>
               </div>
               <div class="news_list_item__date">28.10.2020</div>
-              <a href="news_item.html" class="news_list_item__link"></a>
+              <a href="specialist.html" class="news_list_item__link"></a>
             </div>
           </div>
         </div>
@@ -131,7 +152,7 @@
                 <p>"Медицинский центр ДА!» приглашает детей и взрослых на индивидуальные оздоровительные тренировки. У нас Вы сможете восстановить осанку,...</p>
               </div>
               <div class="news_list_item__date">28.10.2020</div>
-              <a href="news_item.html" class="news_list_item__link"></a>
+              <a href="specialist.html" class="news_list_item__link"></a>
             </div>
           </div>
         </div>
@@ -146,12 +167,13 @@
                 <p>"Медицинский центр ДА!» приглашает детей и взрослых на индивидуальные оздоровительные тренировки. У нас Вы сможете восстановить осанку,...</p>
               </div>
               <div class="news_list_item__date">28.10.2020</div>
-              <a href="news_item.html" class="news_list_item__link"></a>
+              <a href="specialist.html" class="news_list_item__link"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="pagi">
       <a href="" class="pagi_side pagi_side-left"></a>
       <a href="" class="pagi__item">1</a>
@@ -160,10 +182,60 @@
       <a href="" class="pagi__item">4</a>
       <a href="" class="pagi_side pagi_side-right"></a>
     </div>
-  </div>
+	</div>
 </div>
 
 
+<div class="bottom_form">
+  <div class="wrapper">
+    <div class="bottom_form__form">
+      <div class="bottom_form__title">Записаться на прием</div>
+
+      <div class="form row">
+        <div class="form-group col-4">
+          <select name="" class="select" placeholder="Тема вопроса">
+            <!-- <option disabled>Тема вопроса</option> -->
+            <option value="Продукция">Лечение позвоночника</option>
+            <option value="еще">еще</option>
+          </select>
+        </div>
+            
+        <div class="form-group col-4">
+          <input type="text" name="lastname" placeholder="Фамилия">
+        </div>
+        <div class="form-group col-4">
+          <input type="tel" name="phone" placeholder="Телефон">
+        </div>
+        <div class="form-group col-4">
+          <input type="date" name="date" placeholder="дд.мм.гггг">
+        </div>
+        <div class="form-group col-4">
+          <input type="text" name="name" placeholder="Имя">
+        </div>
+        <div class="form-group col-4">
+          <input type="email" name="email" placeholder="E-mail">
+        </div>
+
+        <div class="form-group col-12 aligncenter mgt20 mgb30">
+          <button type="button" class="btn btn_form" style="font-size: 21px;">Записаться</button>
+        </div>
+      </div>
+
+      <div class="bottom_form__desc">* Все поля обязательны для заполнения.<br>Нажимая кнопку «Записаться», вы подтверждаете, что ознакомлены и согласны с условиями <a href="politic.html">Политики конфиденциальности</a>.</div>
+    </div>
+
+    <div class="bottom_form__loading loading" style="display: none; height: 300px;"></div>
+
+    <div class="bottom_form__success" style="min-height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; display: none;">
+      <div class="bottom_form__title">Спасибо за обращение</div>
+      <div class="bottom_form__desc">Мы свяжемся с вами в ближайшее время.</div>
+
+      <div style="font-size: 4em; display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+        <i class="icon-ok"></i>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="footer_top">
   <div class="wrapper">
