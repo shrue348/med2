@@ -76,4 +76,16 @@ $(function(){
     prevArrow: prevArrow,
     nextArrow: nextArrow
   });
+
+  $('.main_slider_list').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    prevArrow: prevArrow,
+    nextArrow: nextArrow,
+    dots: true,
+  });
+
+
 });

@@ -3,13 +3,12 @@
 
 
 @media (min-width: 1025px) {
-
-
+  /* .carousel_arrow { display: none !important; } */
 }
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1360px) {
 
 }
 
