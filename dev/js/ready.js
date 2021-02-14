@@ -27,6 +27,9 @@ function number_format(number, decimals, dec_point, separator ) {
   return s.join(dec);
 }
 
+$(function(){
+  baguetteBox.run('.baguetteBox');
+});
 
 $(function(){ 
   $("a.scrollto").click(function () {
@@ -36,7 +39,6 @@ $(function(){
     return false;
     });
 });
-
 
 $(function(){
   $('[name=phone]').mask("+7 (999) 999-9999");
@@ -87,7 +89,23 @@ $(function(){
     dots: true,
   });
 
+  $('.cert_list > .row').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    prevArrow: prevArrow,
+    nextArrow: nextArrow
+  });
 
+  $('.gal_list > .row').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    prevArrow: prevArrow,
+    nextArrow: nextArrow
+  });
 });
 
 
