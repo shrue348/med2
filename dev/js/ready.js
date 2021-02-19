@@ -76,7 +76,17 @@ $(function(){
     slidesToScroll: 1,
     swipeToSlide: true,
     prevArrow: prevArrow,
-    nextArrow: nextArrow
+    nextArrow: nextArrow,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '30px'
+        }
+      }
+    ]
   });
 
   $('.main_slider_list').slick({
@@ -87,6 +97,14 @@ $(function(){
     prevArrow: prevArrow,
     nextArrow: nextArrow,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 1380,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.cert_list > .row').slick({
