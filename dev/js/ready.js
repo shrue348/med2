@@ -33,11 +33,11 @@ $(function(){
 
 $(function(){ 
   $("a.scrollto").click(function () {
-    var elementClick = $(this).attr("href")
+    var elementClick = $(this).attr("href");
     var destination = $(elementClick).offset().top;
     jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 400);
     return false;
-    });
+  });
 });
 
 $(function(){
@@ -58,7 +58,29 @@ $(function(){
     slidesToScroll: 1,
     swipeToSlide: true,
     prevArrow: prevArrow,
-    nextArrow: nextArrow
+    nextArrow: nextArrow,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          centerMode: true
+        }
+      }
+    ]
   });
 
   $('.last_news_carousel').slick({
@@ -67,10 +89,18 @@ $(function(){
     slidesToScroll: 1,
     swipeToSlide: true,
     prevArrow: prevArrow,
-    nextArrow: nextArrow
+    nextArrow: nextArrow,
+    responsive: [
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
-  $('.last_reviews_carousel').slick({
+  $('.last_reviews_carousel > .row').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -83,7 +113,7 @@ $(function(){
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '30px'
+          // centerPadding: '30px'
         }
       }
     ]
@@ -113,7 +143,29 @@ $(function(){
     slidesToScroll: 1,
     swipeToSlide: true,
     prevArrow: prevArrow,
-    nextArrow: nextArrow
+    nextArrow: nextArrow,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          centerMode: true
+        }
+      }
+    ]
   });
 
   $('.gal_list > .row').slick({
@@ -122,7 +174,29 @@ $(function(){
     slidesToScroll: 1,
     swipeToSlide: true,
     prevArrow: prevArrow,
-    nextArrow: nextArrow
+    nextArrow: nextArrow,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          centerMode: true
+        }
+      }
+    ]
   });
 });
 

@@ -663,7 +663,8 @@ h2:first-child,
 .contacts_content { padding: 75px 0 45px; }
 
 
-.methods_content { padding: 25px 0 75px; }
+.methods_content { padding: 25px 0 45px; }
+.methods_content__txt { display: -ms-flexbox; display: flex; -ms-flex-align: start; align-items: flex-start; }
 .methods_item { border-radius: 14px; overflow: hidden; margin-bottom: 25px; background-color: #eeeeee; display: -ms-flexbox; display: flex; -ms-flex-align: stretch; align-items: stretch; -ms-flex-pack: start; justify-content: flex-start; }
 .methods_item .txt { margin-bottom: 0; }
 .methods_item .txt p:last-child { padding-right: 55px }
@@ -712,7 +713,7 @@ h2:first-child,
 .color_block__content { padding: 15px 24px; }
 
 
-.bottom_form {  background: rgb(55,158,42); background: linear-gradient(270deg, rgba(55,158,42,1) 0%, rgba(133,192,26,1) 100%); color: #fff; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.bottom_form {  background: rgb(55,158,42); background: linear-gradient(270deg, rgba(55,158,42,1) 0%, rgba(133,192,26,1) 100%); color: #fff; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; overflow: hidden; }
 .bottom_form > .wrapper { padding-top: 45px; padding-bottom: 45px; background: url(../img/form_back.png) no-repeat scroll center right / auto 100% transparent;}
 .bottom_form a { color: #fff; text-decoration: underline; }
 .bottom_form .form-group.col-4:nth-child(3n+1) { clear: left; }
@@ -767,7 +768,7 @@ h2:first-child,
 .news_list_item__link { display: block; width: 45px; height: 45px; line-height: 1; background: url(../img/more.png) no-repeat scroll center / cover transparent; margin: -35px -7px -7px auto; }
 
 
-.last_news_item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; border-radius: 13px; background-color: #eee; color: #3f3f3f; overflow: hidden; min-height: 241px; }
+.last_news_item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; border-radius: 13px; background-color: #eee; color: #3f3f3f; overflow: hidden; min-height: 241px; width: 100%; }
 .last_news_item:active { opacity: .8; }
 .last_news_item__title { font-size: 14px; padding: 14px 18px; line-height: 1.2; box-sizing: border-box; }
 .last_news_item__img_wrap { height: 128px; }
@@ -821,7 +822,7 @@ h2:first-child,
 }
 .main_slider_item__subtitle { text-align: center; font-size: 1.13em; margin-bottom: 2em; }
 .main_slider_item__desc { margin-bottom: 1em; font-size: 2.3em; font-weight: 400; text-align: center; }
-.main_slider_list .carousel_arrow { margin: auto; top: 0; right: 0; bottom: 0; left: 0; }
+.main_slider_list .carousel_arrow { margin: auto; top: 0; right: 0; bottom: 0; left: 0; z-index: 1; }
 .main_slider_list .carousel_arrow.carousel_arrow-prev { transform: translateX(-650px); }
 .main_slider_list .carousel_arrow.carousel_arrow-next { transform: translateX(650px); }
 
@@ -881,8 +882,8 @@ blockquote:after { content: url(../img/quote_close.png); position: absolute; z-i
 .bottom_info__link:hover { text-decoration: none; }
 
 
-.bottom_consult__list { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; }
-.bottom_consult__item { margin-bottom: 20px;  }
+.bottom_consult__list { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: center; align-items: center; -ms-flex-pack: center !important; justify-content: center !important; }
+.bottom_consult__item { margin-bottom: 20px; width: 240px !important; }
 .bottom_consult__link { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: start; justify-content: flex-start; line-height: 1.1; text-decoration: underline; }
 .bottom_consult__img { width: 48px; margin-right: 13px; }
 .bottom_consult__img > img { display: block; line-height: 1; }
@@ -893,11 +894,6 @@ blockquote:after { content: url(../img/quote_close.png); position: absolute; z-i
 .oklist { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-align: start; align-items: flex-start; }
 .oklist__link { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; line-height: 1.1; box-sizing: border-box; width: 50%; }
 .oklist__link:before { content: url(../img/galka.png); margin-right: 5px; }
-
-
-
-
-
 
 
 
