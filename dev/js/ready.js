@@ -201,7 +201,21 @@ $(function(){
 });
 
 
+$(function(){
+  $('[data-dropdown] > button').on('click', function (event) {
+    $('[data-dropdown].open').removeClass('open');
+    $(this).parent().toggleClass('open');
+  });
 
+  $('body').on('click', function (e) {
+    if (!$('[data-dropdown]').is(e.target) 
+      && $('[data-dropdown]').has(e.target).length === 0 
+      && $('.open').has(e.target).length === 0
+    ){
+      $('[data-dropdown]').removeClass('open');
+    }
+  });
+});
 
 
 
