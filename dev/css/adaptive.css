@@ -24,6 +24,8 @@
   .main_slider_item > .wrapper > .row > [class*=col-]:first-child { width: 50%; }
   .main_slider_item > .wrapper > .row > [class*=col-]:last-child { width: 50%;  }
   .main_slider_item__desc { font-weight: 500; }
+
+  .header_submenu__list { max-width: calc(100vw - 30px); }
 }
 
 

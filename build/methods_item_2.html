@@ -23,19 +23,55 @@
 				</a>
 			</div>
 			<div class="header_menu col-"">
-				<div class="header_menu__list">
-					<a href="/about.html" class="header_menu__link">О центре</a>
-					<a href="/price.html" class="header_menu__link">Цены и Акции</a>
-					<a href="/specs.html" class="header_menu__link">Специалисты</a>
-					<a href="/directions.html" class="header_menu__link">Направления</a>
-					<a href="/contacts.html" class="header_menu__link">Контакты</a>
-				</div>
+				<ul class="header_menu__list">
+					<li class="header_menu__item" data-dropdown>
+						<a href="/about.html" class="header_menu__link">О центре</a>
+						<ul class="header_submenu__list">
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Вытяжение позвоночника <wbr>(Аутогравитациоонная терапия) </a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Водолечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Физиотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Грязелечение</a></li>
+						</ul>
+					</li>
+					<li class="header_menu__item"><a href="/price.html" class="header_menu__link">Цены и Акции</a></li>
+					<li class="header_menu__item"><a href="/specs.html" class="header_menu__link">Специалисты</a></li>
+					<li class="header_menu__item"><a href="/directions.html" class="header_menu__link">Направления</a></li>
+					<li class="header_menu__item"><a href="/contacts.html" class="header_menu__link">Контакты</a></li>
+				</ul>
 				<hr>
-				<div class="header_menu__list">
-					<a href="/methods.html" class="header_menu__link">Методы лечения</a>
-					<a href="" class="header_menu__link">Диагностика</a>
-					<a href="" class="header_menu__link header_menu__link-marker">Лабораторные исследования</a>
-				</div>
+				<ul class="header_menu__list">
+					<li class="header_menu__item" data-dropdown>
+						<a href="/methods.html" class="header_menu__link" >Методы лечения</a>
+						<ul class="header_submenu__list">
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Вытяжение позвоночника <wbr>(Аутогравитациоонная терапия) </a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Водолечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Физиотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Грязелечение</a></li>
+						</ul>
+					</li>
+					<li class="header_menu__item" data-dropdown>
+						<a href="" class="header_menu__link" >Диагностика</a>
+						<ul class="header_submenu__list">
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Вытяжение позвоночника <wbr>(Аутогравитациоонная терапия) </a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Водолечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Физиотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Грязелечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Мануальная терапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Остеопатия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Массаж</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Кинезотейпирование</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Лечебная физкультура</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Кинезотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Иглорефлексотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Криотерапия</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Кишечный диализ</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Медикаментозное лечение</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Психотерапевтическая коррекция</a></li>
+							<li class="header_submenu__item"><a href="#" class="header_submenu__link">Медицинский педикюр</a></li>
+						</ul>
+					</li>
+					<li class="header_menu__item"><a href="" class="header_menu__link header_menu__link-marker">Лабораторные исследования</a></li>
+				</ul>
 			</div>
 			<div class="header_info col-"">
 				<div class="header_info__tel">+7 (812) 323-15-03</div>
@@ -48,7 +84,7 @@
 						<button type="button" class="btn_blank"></button>
 						<form class="dropdown-menu header_search_form">
 							<input type="text" class="header_search_form__input">
-							<button type="button" class="btn_blank header_search_form__clear"></button>
+							<button type="button" class="btn_blank header_search_form__clear" onclick="$('.header_search_form__input').val('').focus()"></button>
 							<button type="submit" style="display: none;"></button>
 						</form>
 					</div>
@@ -93,7 +129,7 @@
 							</div>
 						</div>
 
-						<div class="form form__success" style="display: none;">
+						<div class="form form__success aligncenter" style="display: none;">
 							Спасибо! Мы свяжемся с вами в ближайшее время!
 						</div>
 					</div>
@@ -146,7 +182,7 @@
 							</div>
 						</div>
 
-						<div class="form form__success" style="display: none;">
+						<div class="form form__success aligncenter" style="display: none;">
 							Спасибо! Мы свяжемся с вами в ближайшее время!
 						</div>
 					</div>

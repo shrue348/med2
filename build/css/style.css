@@ -571,7 +571,8 @@ h2:first-child,
 .header_logo img { display: block; line-height: 1; }
 .header_menu hr { margin: 10px 5px; }
 .header_menu__list { margin-left: -5px; margin-right: -5px; display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; }
-.header_menu__link { display: block; margin: 0 5px; padding: 6px 5px 4px; font-size: 14px; color: #3f3f3f; border: 1px solid transparent; border-radius: 18px; white-space: nowrap; line-height: 1.1; }
+.header_menu__item { margin: 0 5px; }
+.header_menu__link { display: block; padding: 6px 5px 4px; font-size: 14px; color: #3f3f3f; border: 1px solid transparent; border-radius: 18px; white-space: nowrap; line-height: 1.1; }
 .header_menu__link-marker { border-color: #279017; color: #279017; padding: 6px 18px 4px; }
 .header_info__tel { font-size: 20px; color: #279017; white-space: nowrap; margin-bottom: 15px; line-height: 1.1; }
 .header_info__worktime { font-size: 12px; color: #3f3f3f; }
@@ -587,10 +588,16 @@ h2:first-child,
 .header_dropdown .close:active { opacity: 1; }
 .header_dropdown .form-group { margin-bottom: 9px; }
 
-
 .header_dropdown:not(.header_dropdown-top) .dropdown-menu { top: 3.33em; right: 0; }
 .header_dropdown.header_dropdown-top .dropdown-menu { bottom: 3.33em; right: 0; }
 
+.header_submenu__list { position: absolute; background-color: #fff; border-radius: 14px; border: 1px solid #cfcfcf; padding: 20px; z-index: 10; width: 100vw; max-width: 1172px; box-sizing: border-box; display: none; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: auto; left: 0; right: 0; top: calc(100% + 15px); }
+.header_submenu__list:before { position: absolute; z-index: 1; content: ''; border-bottom: 15px solid #cfcfcf; border-left: 15px solid transparent; border-right: 15px solid transparent; top: -15px; left: 1px; }
+.header_submenu__list:after { position: absolute; z-index: 2; content: ''; border-bottom: 14px solid #fff; border-left: 14px solid transparent; border-right: 14px solid transparent; top: -14px; left: 2px; }
+.header_menu__item.open .header_submenu__list { display: -ms-flexbox; display: flex; }
+.header_submenu__item { -ms-flex: 0 0 25%; flex: 0 0 25%; margin-bottom: 7px; }
+.header_submenu__link { color: #3f3f3f; line-height: 1; }
+.header_submenu__link:hover { color: #279017; }
 
 .footer_top { padding: 56px 0 20px; background-color: #3f3f3f; color: #fff; }
 .footer_top .wrapper > .row { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
