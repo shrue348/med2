@@ -38,6 +38,29 @@
   .header_menu { display: none; }
   .header_btns { display: none; }
   .header_menu_toggle { display: block; }
+  .header_menu_toggle__btn { display: block; }
+
+  .header_menu {
+    position: absolute; z-index: 10;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: calc(100% - 30px);
+    flex-direction: column;
+    padding: 0 !important;
+  }
+  .header_menu hr { display: none; }
+  .header_menu__list { flex-direction: column; }
+  .header_menu__item { display: block; }
+  .header_menu__item:not(:last-child) { border-bottom: 1px solid #cfcfcf; }
+  .header_menu__link { padding: 15px 20px; border-radius: 0; }
+  .header_menu__link:active { background-color: #efefef; }
+  .header_menu__list ~ .header_menu__list { border-top: 1px solid #cfcfcf; }
+  .header_menu__link-marker { border: 0 none; font-weight: bold; border-radius: 0; }
 
   .footer_top .wrapper > .row { flex-wrap: wrap; justify-content: space-between; justify-content: flex-start; }
   .footer_logo { order: 0; }

@@ -233,3 +233,15 @@ $(function(){
     }
   });
 });
+
+/**
+ * Menu
+ */
+$(function(){
+  $('.header_menu_toggle__btn').on('click', function(){
+    $('.header_menu').toggleClass('header_menu-visible');
+  });
+  $('.header_menu_toggle__close').on('click', function(){
+    $('.header_menu').removeClass('header_menu-visible');
+  });
+});
