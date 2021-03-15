@@ -605,9 +605,10 @@ h2:first-child,
 .header_menu_toggle__btn:hover { opacity: .8; }
 .header_menu_toggle__btn:active { transform: translateY(2px); }
 
-.header_menu_toggle__close { border: 0; padding: 0; width: 52px; height: 38px; background: url(../img/menu_close.png) no-repeat scroll center transparent; transition: all .2s ease; margin-left: auto; margin-top: 19px; margin-bottom: 15px; margin-right: 5px; }
+.header_menu_toggle__close { border: 0; padding: 0; width: 52px; height: 38px; background: url(../img/menu_close.png) no-repeat scroll center transparent; transition: all .2s ease; margin-left: auto; margin-top: 19px; margin-bottom: 15px; margin-right: 5px; display: none; }
 .header_menu_toggle__close:hover { opacity: .8; }
 .header_menu_toggle__close:active { transform: translateY(2px); }
+.header_menu-visible .header_menu_toggle__close { display: block; }
 
 .footer_top { padding: 56px 0 20px; background-color: #3f3f3f; color: #fff; }
 .footer_top .wrapper > .row { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; }
